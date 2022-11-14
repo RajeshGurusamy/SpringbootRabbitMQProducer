@@ -2,6 +2,11 @@ package com.persistent.rabbitmq.producer.model;
 
 import java.io.Serializable;
 
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+
+@Component
+@Transactional
 public class Payment implements Serializable{
 
 	private static final long serialVersionUID = 1L;
